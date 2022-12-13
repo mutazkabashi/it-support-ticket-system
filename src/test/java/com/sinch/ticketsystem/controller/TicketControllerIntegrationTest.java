@@ -428,12 +428,12 @@ public class TicketControllerIntegrationTest {
 	private void simuatePostBadRequest(String url,Object body, String message, String details) 
 			throws Exception, JsonProcessingException {
 		mockMvc.perform(MockMvcRequestBuilders.post(url)
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString((body)))
-                .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isBadRequest())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath(ERROR_MESSAGE_LABEL).value(message))
-                .andExpect(jsonPath(ERROR_MESSAGE_DETAILS_LABEL,containsString(details)));
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(objectMapper.writeValueAsString((body)))
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isBadRequest())
+				.andExpect(content().contentType(MediaType.APPLICATION_JSON))
+				.andExpect(jsonPath(ERROR_MESSAGE_LABEL).value(message))
+				.andExpect(jsonPath(ERROR_MESSAGE_DETAILS_LABEL, containsString(details)));
 	}	
 }
