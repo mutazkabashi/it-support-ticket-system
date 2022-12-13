@@ -418,10 +418,10 @@ public class TicketControllerIntegrationTest {
 		TicketStatusWithCommentDto ticketStatusWithCommentDto = new TicketStatusWithCommentDto(1L, null, commentDto);
 		
 		//then
-		mockMvc.perform(MockMvcRequestBuilders.patch("/api/v1/tickets/"+"1")
+		mockMvc.perform(MockMvcRequestBuilders.patch("/api/v1/tickets/" + "1")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString((ticketStatusWithCommentDto))))
-		        .andExpect(status().isBadRequest());
+				.andExpect(status().isBadRequest());
 	}
 	
     //Util Methods
