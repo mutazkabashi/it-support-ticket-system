@@ -33,7 +33,7 @@ public class Comment {
 	private String createdBy;
 
 	/*
-	 * It is better to map @OneToMany relationship from the parent side (performance wise)
+	 * It is better to map @OneToMany relationship from the child side (performance wise)
 	 * see https://vladmihalcea.com/the-best-way-to-map-a-onetomany-association-with-jpa-and-hibernate/
 	 */
 	@ManyToOne(fetch = FetchType.LAZY)

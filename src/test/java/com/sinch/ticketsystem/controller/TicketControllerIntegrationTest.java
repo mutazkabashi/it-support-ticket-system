@@ -253,12 +253,11 @@ public class TicketControllerIntegrationTest {
 	@Test
     public void whenPostRequestToCreateCommentWithNullEmail_thenRequestFailedWithCorrectResponse() 
     		throws Exception {
-		//when
+		// when
 		CommentDto commentDto = Utils.getCommentDto("information", null, 1L);
-        
-        //then
-		simuatePostBadRequest(CREATE_COMMENT_URL, commentDto,
-				VALIDATION_ERROR_MESSAGE,
+
+		// then
+		simuatePostBadRequest(CREATE_COMMENT_URL, commentDto, VALIDATION_ERROR_MESSAGE,
 				"[createdBy-must not be blank]");
     
     }
@@ -266,13 +265,11 @@ public class TicketControllerIntegrationTest {
 	@Test
     public void whenPostRequestToCreateCommentWithNullTicket_thenRequestFailedWithCorrectResponse() 
     		throws Exception {
-		//when
+		// when
 		CommentDto commentDto = Utils.getCommentDto("information", Utils.EMAIL, null);
-        
-        //then
-		simuatePostBadRequest(CREATE_COMMENT_URL, commentDto,
-				VALIDATION_ERROR_MESSAGE,
-				"[ticketId-must not be null]");
+
+		// then
+		simuatePostBadRequest(CREATE_COMMENT_URL, commentDto, VALIDATION_ERROR_MESSAGE, "[ticketId-must not be null]");
     
     }
 	
