@@ -11,6 +11,10 @@ agent yet
 ## Rest-Apis/service offered by this service
 - CreateTicket : to create ticket without a comment
 - getAllTickets : Return All Tickets in the system
+- GetTicketInformation :Return all the information about a ticket including it's comments 
+- UpdateTicket : update the status of a ticket and (optionally) add comment to it.
+- CreateComment : add comment to an existing ticket
+- GetTicketByCustomerId : Return All Customer's tickets.
 
 ## Techstack
 - Java 11
