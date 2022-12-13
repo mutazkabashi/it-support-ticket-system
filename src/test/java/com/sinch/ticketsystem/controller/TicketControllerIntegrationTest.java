@@ -404,7 +404,8 @@ public class TicketControllerIntegrationTest {
 				TicketStatus.RESOLVED, commentDto);
 		
 		//then
-		mockMvc.perform(MockMvcRequestBuilders.patch("/api/v1/tickets/"+"test")
+		mockMvc.perform(
+				MockMvcRequestBuilders.patch("/api/v1/tickets/" + "test")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString((ticketStatusWithCommentDto))))
 		        .andExpect(status().isBadRequest());
