@@ -20,10 +20,10 @@ agent yet
 
 ## Techstack
 - Java 11  
--Spring Boot 2.7.6  
--h2 in-memory Database  
--Swagger  
--Jib
+- Spring Boot 2.7.6  
+- h2 in-memory Database  
+- Swagger  
+- Jib
 
 ## How to build docker Image localy from source
 `./mvnw package  jib:dockerBuild`
