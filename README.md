@@ -1,5 +1,5 @@
 # it-support-ticket-system
-A Spring boot backend API of an IT-support ticket system which is being used
+A Spring boot backend API of an IT-support ticket system which is being used  
 by the IT-support agents. The main object of the system is the support ticket which contains
 information about the case. Each support ticket can have multiple comments added by the support
 agent. The tickets have a lifecycle that contains the following states:
