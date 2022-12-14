@@ -19,10 +19,10 @@ agent yet
 - GetTicketByCustomerId : Return All Customer's tickets.
 
 ## Techstack
-- Java 11
--Spring Boot 2.7.6
--h2 in-memory Database
--Swagger
+- Java 11  
+-Spring Boot 2.7.6  
+-h2 in-memory Database  
+-Swagger  
 -Jib
 
 ## How to build docker Image localy from source
@@ -32,6 +32,6 @@ agent yet
 `docker run --publish=8080:8080 it-support-ticket-system`
 
 ## How To Test It using Swagger-ui
-- open the following url in Chrome Broswer
-  `http://localhost:8080/swagger-ui/index.html`
+- open the following url in Chrome Broswer  
+- `http://localhost:8080/swagger-ui/index.html`
 
